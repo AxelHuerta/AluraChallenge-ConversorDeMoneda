@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171"
+   xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.convertidor.TemperaturaController">
+   <children>
+      <Label text="Conversor de Temperaturas" />
+      <TextField fx:id="datoEntrada" promptText="Ingrese la temperatura" prefWidth="400" />
+      <ChoiceBox fx:id="entrada" prefWidth="400" />
+      <ChoiceBox fx:id="salida" prefWidth="400" />
+      <Button fx:id="btnConvertir" onAction="#convertir">Convertir</Button>
+      <Label text="" fx:id="resultado" />
+      <Button fx:id="regresar" text="Volver al menú" onAction="#switchToMenu" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
