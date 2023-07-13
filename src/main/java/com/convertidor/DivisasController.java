@@ -74,7 +74,7 @@ public class DivisasController {
     float inputValor = establecerTipoDivisa(entrada.getValue()).getValor();
     float outputValor = establecerTipoDivisa(salida.getValue()).getValor();
 
-    float operacion = inputValor / outputValor;
+    float operacion = Float.parseFloat(datoEntrada.getText()) * (inputValor / outputValor);
 
     // formato de 5 decimales
     DecimalFormat decimalFormat = new DecimalFormat("#.#####");
